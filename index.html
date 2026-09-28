@@ -103,6 +103,27 @@
   .stat .num{font-family:'Playfair Display',serif;font-weight:600;font-size:clamp(26px,3.4vw,38px);color:var(--green);font-variant-numeric:tabular-nums;}
   .stat .label{margin-top:4px;font-size:13.5px;color:var(--muted);}
 
+  /* ---------------- Vision / Story ---------------- */
+  section.story{padding:72px 0 64px;}
+  .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;margin-top:18px;}
+  @media (max-width:860px){.story-grid{grid-template-columns:1fr;gap:28px;}}
+  .story h2{font-size:clamp(30px,4vw,44px);line-height:1.2;letter-spacing:-0.01em;}
+  .story-byline{margin-top:18px;font-size:13.5px;color:var(--muted);letter-spacing:.02em;}
+  .story-body p{margin:0 0 18px;font-size:16.5px;line-height:1.75;color:#3a3830;max-width:58ch;}
+  .story-body p:last-child{margin-bottom:0;}
+  .story-body strong{color:var(--ink);font-weight:600;}
+  .pullquote{
+    margin:56px 0 0;padding:6px 0 6px 28px;
+    border-left:3px solid var(--orange);
+    max-width:860px;
+  }
+  .pullquote blockquote{
+    margin:0;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:500;
+    font-size:clamp(22px,3vw,32px);line-height:1.4;color:var(--ink);
+  }
+  .pullquote figcaption{margin-top:16px;font-size:13.5px;color:var(--muted);}
+  .pullquote figcaption b{color:var(--ink);font-weight:600;}
+
   /* ---------------- Currently ---------------- */
   section.currently{padding:64px 0;}
   .now-card{
@@ -195,6 +216,7 @@
     <div class="logo">Devender<span>.</span></div>
     <div class="nav-links">
       <a href="#about" class="active">About</a>
+      <a href="#story">Vision</a>
       <a href="#currently">Currently</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
@@ -237,6 +259,24 @@
       <div class="stat"><div class="num">~<span class="count" data-target="5400" data-suffix="">0</span></div><div class="label">alumni records managed</div></div>
       <div class="stat"><div class="num"><span class="count" data-target="1600" data-suffix="+">0</span></div><div class="label">YouTube subscribers</div></div>
     </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="eyebrow">THE PERSON BEHIND THE WORK</div>
+    <div class="story-grid">
+      <div>
+        <h2>A mathematician who found a home in <em>community building.</em></h2>
+        <div class="story-byline">Devender Singh | IITGN</div>
+      </div>
+      <div class="story-body">
+        <p>Devender is an alumnus of IIT Gandhinagar who turned his experience as a student into a career in alumni relations and institutional advancement. At IITGN, his work sits at the intersection of <strong>relationships, fundraising, events, data, and communication.</strong></p>
+        <p>He describes his work simply: building alumni communities with intent and craft. The role has grown from executing communications to <strong>designing systems</strong> that make engagement, giving, and stewardship easier to sustain.</p>
+      </div>
+    </div>
+    <figure class="pullquote">
+      <blockquote>&ldquo;The interesting part of alumni work is that it is never only about an email, an event, or a donation. It is about creating a reason for people to feel connected.&rdquo;</blockquote>
+      <figcaption><b>Devender Singh</b> &middot; on why this work matters</figcaption>
+    </figure>
   </section>
 
   <section class="currently" id="currently">
